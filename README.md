@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Authentication Api
 
-Things you may want to cover:
 
-* Ruby version
+Sign Up
 
-* System dependencies
+http://localhost:3000/api/v1/signup
 
-* Configuration
+{
+  "user": {
+    "email": "user@email.com",
+    "password": "password",
+    "password_confirmation": "password"
+  }
+}
 
-* Database creation
 
-* Database initialization
+Login
 
-* How to run the test suite
+http://localhost:3000/api/v1/login
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{
+  "user": {
+    "email": "user@email.com",
+    "password": "password"
+}
